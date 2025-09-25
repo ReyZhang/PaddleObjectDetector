@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8136A7E22E1B6C7600DE37A2 /* PaddleObjectDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7E12E1B6C7600DE37A2 /* PaddleObjectDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8136A7FB2E1B6CA300DE37A2 /* ObjectDetectorModelInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7E82E1B6CA200DE37A2 /* ObjectDetectorModelInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8136A7FC2E1B6CA300DE37A2 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7E92E1B6CA200DE37A2 /* timer.h */; };
+		8136A7FD2E1B6CA300DE37A2 /* ObjectDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8136A7EA2E1B6CA200DE37A2 /* ObjectDetector.mm */; };
+		8136A7FE2E1B6CA300DE37A2 /* ObjectDetectorModelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136A7EB2E1B6CA300DE37A2 /* ObjectDetectorModelInfo.m */; };
+		8136A7FF2E1B6CA300DE37A2 /* DetectedObjectInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7EC2E1B6CA300DE37A2 /* DetectedObjectInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8136A8002E1B6CA300DE37A2 /* DetectedTimeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136A7ED2E1B6CA300DE37A2 /* DetectedTimeInfo.m */; };
+		8136A8012E1B6CA300DE37A2 /* ObjectDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7EE2E1B6CA300DE37A2 /* ObjectDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8136A8022E1B6CA300DE37A2 /* paddle_lite_factory_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7F22E1B6CA300DE37A2 /* paddle_lite_factory_helper.h */; };
+		8136A8032E1B6CA300DE37A2 /* paddle_use_ops.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7F32E1B6CA300DE37A2 /* paddle_use_ops.h */; };
+		8136A8042E1B6CA300DE37A2 /* paddle_use_kernels.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7F42E1B6CA300DE37A2 /* paddle_use_kernels.h */; };
+		8136A8052E1B6CA300DE37A2 /* paddle_use_passes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7F52E1B6CA300DE37A2 /* paddle_use_passes.h */; };
+		8136A8062E1B6CA300DE37A2 /* paddle_image_preprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7F62E1B6CA300DE37A2 /* paddle_image_preprocess.h */; };
+		8136A8072E1B6CA300DE37A2 /* paddle_place.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7F72E1B6CA300DE37A2 /* paddle_place.h */; };
+		8136A8082E1B6CA300DE37A2 /* paddle_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7F82E1B6CA300DE37A2 /* paddle_api.h */; };
+		8136A8092E1B6CA300DE37A2 /* DetectedObjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136A7F92E1B6CA300DE37A2 /* DetectedObjectInfo.m */; };
+		8136A80A2E1B6CA300DE37A2 /* DetectedTimeInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8136A7FA2E1B6CA300DE37A2 /* DetectedTimeInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8136A80E2E1B6D1D00DE37A2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A80C2E1B6D1D00DE37A2 /* opencv2.framework */; };
+		8136A80F2E1B6D1D00DE37A2 /* libpaddle_api_light_bundled.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A80D2E1B6D1D00DE37A2 /* libpaddle_api_light_bundled.a */; };
+		8136A9072E20A34600DE37A2 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A9062E20A34600DE37A2 /* libjpeg.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8136A7DE2E1B6C7600DE37A2 /* PaddleObjectDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaddleObjectDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8136A7E12E1B6C7600DE37A2 /* PaddleObjectDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddleObjectDetector.h; sourceTree = "<group>"; };
+		8136A7E82E1B6CA200DE37A2 /* ObjectDetectorModelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectDetectorModelInfo.h; sourceTree = "<group>"; };
+		8136A7E92E1B6CA200DE37A2 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		8136A7EA2E1B6CA200DE37A2 /* ObjectDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjectDetector.mm; sourceTree = "<group>"; };
+		8136A7EB2E1B6CA300DE37A2 /* ObjectDetectorModelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectDetectorModelInfo.m; sourceTree = "<group>"; };
+		8136A7EC2E1B6CA300DE37A2 /* DetectedObjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectedObjectInfo.h; sourceTree = "<group>"; };
+		8136A7ED2E1B6CA300DE37A2 /* DetectedTimeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectedTimeInfo.m; sourceTree = "<group>"; };
+		8136A7EE2E1B6CA300DE37A2 /* ObjectDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectDetector.h; sourceTree = "<group>"; };
+		8136A7F22E1B6CA300DE37A2 /* paddle_lite_factory_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_lite_factory_helper.h; sourceTree = "<group>"; };
+		8136A7F32E1B6CA300DE37A2 /* paddle_use_ops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_ops.h; sourceTree = "<group>"; };
+		8136A7F42E1B6CA300DE37A2 /* paddle_use_kernels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_kernels.h; sourceTree = "<group>"; };
+		8136A7F52E1B6CA300DE37A2 /* paddle_use_passes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_passes.h; sourceTree = "<group>"; };
+		8136A7F62E1B6CA300DE37A2 /* paddle_image_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_image_preprocess.h; sourceTree = "<group>"; };
+		8136A7F72E1B6CA300DE37A2 /* paddle_place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_place.h; sourceTree = "<group>"; };
+		8136A7F82E1B6CA300DE37A2 /* paddle_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_api.h; sourceTree = "<group>"; };
+		8136A7F92E1B6CA300DE37A2 /* DetectedObjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectedObjectInfo.m; sourceTree = "<group>"; };
+		8136A7FA2E1B6CA300DE37A2 /* DetectedTimeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectedTimeInfo.h; sourceTree = "<group>"; };
+		8136A80C2E1B6D1D00DE37A2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		8136A80D2E1B6D1D00DE37A2 /* libpaddle_api_light_bundled.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpaddle_api_light_bundled.a; sourceTree = "<group>"; };
+		8136A9062E20A34600DE37A2 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8136A7DB2E1B6C7600DE37A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8136A9072E20A34600DE37A2 /* libjpeg.a in Frameworks */,
+				8136A80E2E1B6D1D00DE37A2 /* opencv2.framework in Frameworks */,
+				8136A80F2E1B6D1D00DE37A2 /* libpaddle_api_light_bundled.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8136A7D42E1B6C7600DE37A2 = {
+			isa = PBXGroup;
+			children = (
+				8136A7E02E1B6C7600DE37A2 /* PaddleObjectDetector */,
+				8136A7DF2E1B6C7600DE37A2 /* Products */,
+				8136A80B2E1B6D1C00DE37A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8136A7DF2E1B6C7600DE37A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8136A7DE2E1B6C7600DE37A2 /* PaddleObjectDetector.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8136A7E02E1B6C7600DE37A2 /* PaddleObjectDetector */ = {
+			isa = PBXGroup;
+			children = (
+				8136A7EE2E1B6CA300DE37A2 /* ObjectDetector.h */,
+				8136A7EA2E1B6CA200DE37A2 /* ObjectDetector.mm */,
+				8136A7E82E1B6CA200DE37A2 /* ObjectDetectorModelInfo.h */,
+				8136A7EB2E1B6CA300DE37A2 /* ObjectDetectorModelInfo.m */,
+				8136A7EC2E1B6CA300DE37A2 /* DetectedObjectInfo.h */,
+				8136A7F92E1B6CA300DE37A2 /* DetectedObjectInfo.m */,
+				8136A7FA2E1B6CA300DE37A2 /* DetectedTimeInfo.h */,
+				8136A7ED2E1B6CA300DE37A2 /* DetectedTimeInfo.m */,
+				8136A7EF2E1B6CA300DE37A2 /* third-party */,
+				8136A7E92E1B6CA200DE37A2 /* timer.h */,
+				8136A7E12E1B6C7600DE37A2 /* PaddleObjectDetector.h */,
+			);
+			path = PaddleObjectDetector;
+			sourceTree = "<group>";
+		};
+		8136A7EF2E1B6CA300DE37A2 /* third-party */ = {
+			isa = PBXGroup;
+			children = (
+				8136A7F02E1B6CA300DE37A2 /* PaddleLite */,
+			);
+			path = "third-party";
+			sourceTree = "<group>";
+		};
+		8136A7F02E1B6CA300DE37A2 /* PaddleLite */ = {
+			isa = PBXGroup;
+			children = (
+				8136A7F12E1B6CA300DE37A2 /* include */,
+			);
+			path = PaddleLite;
+			sourceTree = "<group>";
+		};
+		8136A7F12E1B6CA300DE37A2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8136A7F22E1B6CA300DE37A2 /* paddle_lite_factory_helper.h */,
+				8136A7F32E1B6CA300DE37A2 /* paddle_use_ops.h */,
+				8136A7F42E1B6CA300DE37A2 /* paddle_use_kernels.h */,
+				8136A7F52E1B6CA300DE37A2 /* paddle_use_passes.h */,
+				8136A7F62E1B6CA300DE37A2 /* paddle_image_preprocess.h */,
+				8136A7F72E1B6CA300DE37A2 /* paddle_place.h */,
+				8136A7F82E1B6CA300DE37A2 /* paddle_api.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8136A80B2E1B6D1C00DE37A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8136A9062E20A34600DE37A2 /* libjpeg.a */,
+				8136A80D2E1B6D1D00DE37A2 /* libpaddle_api_light_bundled.a */,
+				8136A80C2E1B6D1D00DE37A2 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8136A7D92E1B6C7600DE37A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8136A80A2E1B6CA300DE37A2 /* DetectedTimeInfo.h in Headers */,
+				8136A8052E1B6CA300DE37A2 /* paddle_use_passes.h in Headers */,
+				8136A7FB2E1B6CA300DE37A2 /* ObjectDetectorModelInfo.h in Headers */,
+				8136A7FF2E1B6CA300DE37A2 /* DetectedObjectInfo.h in Headers */,
+				8136A8012E1B6CA300DE37A2 /* ObjectDetector.h in Headers */,
+				8136A8082E1B6CA300DE37A2 /* paddle_api.h in Headers */,
+				8136A7FC2E1B6CA300DE37A2 /* timer.h in Headers */,
+				8136A8022E1B6CA300DE37A2 /* paddle_lite_factory_helper.h in Headers */,
+				8136A7E22E1B6C7600DE37A2 /* PaddleObjectDetector.h in Headers */,
+				8136A8072E1B6CA300DE37A2 /* paddle_place.h in Headers */,
+				8136A8042E1B6CA300DE37A2 /* paddle_use_kernels.h in Headers */,
+				8136A8032E1B6CA300DE37A2 /* paddle_use_ops.h in Headers */,
+				8136A8062E1B6CA300DE37A2 /* paddle_image_preprocess.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8136A7DD2E1B6C7600DE37A2 /* PaddleObjectDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8136A7E52E1B6C7600DE37A2 /* Build configuration list for PBXNativeTarget "PaddleObjectDetector" */;
+			buildPhases = (
+				8136A7D92E1B6C7600DE37A2 /* Headers */,
+				8136A7DA2E1B6C7600DE37A2 /* Sources */,
+				8136A7DB2E1B6C7600DE37A2 /* Frameworks */,
+				8136A7DC2E1B6C7600DE37A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaddleObjectDetector;
+			productName = PaddleObjectDetector;
+			productReference = 8136A7DE2E1B6C7600DE37A2 /* PaddleObjectDetector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8136A7D52E1B6C7600DE37A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8136A7DD2E1B6C7600DE37A2 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 8136A7D82E1B6C7600DE37A2 /* Build configuration list for PBXProject "PaddleObjectDetector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8136A7D42E1B6C7600DE37A2;
+			productRefGroup = 8136A7DF2E1B6C7600DE37A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8136A7DD2E1B6C7600DE37A2 /* PaddleObjectDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8136A7DC2E1B6C7600DE37A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8136A7DA2E1B6C7600DE37A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8136A8092E1B6CA300DE37A2 /* DetectedObjectInfo.m in Sources */,
+				8136A7FE2E1B6CA300DE37A2 /* ObjectDetectorModelInfo.m in Sources */,
+				8136A8002E1B6CA300DE37A2 /* DetectedTimeInfo.m in Sources */,
+				8136A7FD2E1B6CA300DE37A2 /* ObjectDetector.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8136A7E32E1B6C7600DE37A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8136A7E42E1B6C7600DE37A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8136A7E62E1B6C7600DE37A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S3E53R6DG9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PaddleObjectDetector/third-party/PaddleLite/include\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dlx.PaddleObjectDetector;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8136A7E72E1B6C7600DE37A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S3E53R6DG9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PaddleObjectDetector/third-party/PaddleLite/include\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dlx.PaddleObjectDetector;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8136A7D82E1B6C7600DE37A2 /* Build configuration list for PBXProject "PaddleObjectDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8136A7E32E1B6C7600DE37A2 /* Debug */,
+				8136A7E42E1B6C7600DE37A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8136A7E52E1B6C7600DE37A2 /* Build configuration list for PBXNativeTarget "PaddleObjectDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8136A7E62E1B6C7600DE37A2 /* Debug */,
+				8136A7E72E1B6C7600DE37A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8136A7D52E1B6C7600DE37A2 /* Project object */;
+}
